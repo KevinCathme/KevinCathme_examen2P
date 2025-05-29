@@ -9,16 +9,16 @@ public class Main {
         int a=0;
         float saldoInicial;
         float tasa;
+        System.out.println("Ingrese Saldo inicial");
+        saldoInicial=leer.nextFloat();
+        System.out.println("Ingrese la tasa en %");
+        tasa=leer.nextFloat();
+        KC_CuentaAhorros cuenta1 = new KC_CuentaAhorros(saldoInicial, tasa, true);
+        System.out.println("Seleccione una opción \n 1. Depositar\n 2. Retirar\n 3. Ver saldo\n Salir");
+        operacion = leer.nextInt();
         while(a==0) {
             operacion=0;
             valor=0;
-            System.out.println("Ingrese Saldo inicial");
-            saldoInicial=leer.nextFloat();
-            System.out.println("Ingrese la tasa en %");
-            tasa=leer.nextFloat();
-            KC_CuentaAhorros cuenta1 = new KC_CuentaAhorros(saldoInicial, tasa, true);
-            System.out.println("Seleccione una opción \n 1. Depositar\n 2. Retirar\n 3. Ver saldo\n Salir");
-            operacion = leer.nextInt();
             if (operacion == 1) {
                 System.out.println("Ingrese Saldo a depositar");
                 valor = leer.nextFloat();
