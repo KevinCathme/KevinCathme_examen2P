@@ -1,8 +1,8 @@
 public class KC_Cuenta {
-    public float saldo=0;
-    public int depositos=0;
-    public int retiros=0;
-    public float tasaAnual;
+    protected float saldo;
+    protected int depositos=0;
+    protected int retiros=0;
+    protected float tasaAnual;
 
     public KC_Cuenta(float saldo, float tasa){
         this.saldo=saldo;

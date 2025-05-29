@@ -5,12 +5,17 @@ private boolean activa;
             activa=true;
     }
     public void imprimir(){
-        if(activa==true) {
             System.out.println("Saldo: " + saldo);
             System.out.println("Operaciones: " + (depositos + retiros));
         }
-        else{
-            System.out.println("La cuenta está inactiva");
-        }
+
+    @Override
+    public void depositar(float deposito) {
+        super.depositar(deposito);
+    }
+
+    @Override
+    public void retiro(float retiro) {
+        super.retiro(retiro);
     }
 }

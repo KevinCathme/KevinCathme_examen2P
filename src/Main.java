@@ -18,7 +18,7 @@ public class Main {
             cuenta1.imprimir();
             operacion=0;
             valor=0;
-            System.out.println("Seleccione una opción \n 1. Depositar\n 2. Retirar\n 3. Ver saldo \n4. Salir");
+            System.out.println("Seleccione una opción \n 1. Depositar\n 2. Retirar\n 3. Ver saldo\n 4. Salir");
             operacion = leer.nextInt();
             if (operacion == 1) {
                 System.out.println("Ingrese Saldo a depositar");
