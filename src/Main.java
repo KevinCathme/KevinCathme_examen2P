@@ -15,7 +15,7 @@ public class Main {
         tasa=leer.nextFloat();
         KC_CuentaAhorros cuenta1 = new KC_CuentaAhorros(saldoInicial,tasa,true);
         while(a==0) {
-            cuenta1.imprimir();
+
             operacion=0;
             valor=0;
             System.out.println("Seleccione una opción \n 1. Depositar\n 2. Retirar\n 3. Ver saldo\n 4. Salir");
