@@ -13,11 +13,12 @@ public class Main {
         saldoInicial=leer.nextFloat();
         System.out.println("Ingrese la tasa en %");
         tasa=leer.nextFloat();
-        KC_CuentaAhorros cuenta1 = new KC_CuentaAhorros(saldoInicial, tasa, true);
+        KC_CuentaAhorros cuenta1 = new KC_CuentaAhorros(saldoInicial,tasa,true);
         while(a==0) {
+            cuenta1.imprimir();
             operacion=0;
             valor=0;
-            System.out.println("Seleccione una opción \n 1. Depositar\n 2. Retirar\n 3. Ver saldo\n4. Salir");
+            System.out.println("Seleccione una opción \n 1. Depositar\n 2. Retirar\n 3. Ver saldo \n4. Salir");
             operacion = leer.nextInt();
             if (operacion == 1) {
                 System.out.println("Ingrese Saldo a depositar");
@@ -26,7 +27,7 @@ public class Main {
                 cuenta1.imprimir();
             }
             if (operacion == 2) {
-                System.out.println("Ingrese Saldo a depositar");
+                System.out.println("Ingrese Saldo a retirar");
                 valor = leer.nextFloat();
                 cuenta1.retiro(valor);
                 cuenta1.imprimir();
